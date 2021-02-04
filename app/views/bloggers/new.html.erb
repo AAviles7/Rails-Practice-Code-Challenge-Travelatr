@@ -1,0 +1,17 @@
+<h1> New Blogger Form</h1>
+<%= "#{@error_msg}" %>
+<%= form_tag bloggers_path do %>
+    <label>blogger_name:</label><br>
+    <%= text_field_tag :name %><br>
+
+    <label>blogger_age:</label><br>
+    <%= number_field_tag :age %><br>
+
+    <label>blogger_bio:</label><br>
+    <%= text_field_tag :bio %><br>
+
+    <%= submit_tag "Submit Blogger" %>
+<% end %>
+
+
+
